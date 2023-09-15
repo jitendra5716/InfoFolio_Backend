@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect(process.env.MONGOURL);
+const MONGOURL = 'mongodb+srv://user:user@cluster0.qbe2bo3.mongodb.net/'
+
+mongoose.connect(MONGOURL);
 
 const db = mongoose.connection;
 
