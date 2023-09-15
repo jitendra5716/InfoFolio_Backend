@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://localhost:27017/usersData');
+mongoose.connect(process.env.MONGOURL);
 
 const db = mongoose.connection;
 
